@@ -6,7 +6,7 @@
 
 void sortStrings(char arr[][MAX_LENGTH], int n) {
     char temp[MAX_LENGTH];
-    for (int i = 0; i < n - 1; i++) {
+    for (int i = 0; i < n - 1; i++) {// for the sorting process
         for (int j = i + 1; j < n; j++) {
             if (strcmp(arr[i], arr[j]) > 0) {
                 strcpy(temp, arr[i]);
@@ -33,7 +33,7 @@ int main() {
 
     sortStrings(arr, n);
 
-    printf("\nSorted strings:\n");
+    printf("\nSorted strings:\n");//To print the sorted strings
     for (int i = 0; i < n; i++) {
         printf("%s\n", arr[i]);
     }
